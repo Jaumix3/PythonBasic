@@ -33,7 +33,12 @@ def dividir():
   c = a / b
   print("El resultat de dividir {} entre {} és {}".format(a, b, c))
 def canvBase():
-   
+   a = int(input("Introdueix el nombre que vulguis convertir en decimal: "))
+   print(f"En binari és {bin(a)}")
+   print(f"En octal és {oct(a)}")
+   print(f"En hexadecimal és {hex(a)}")
+   print(f"En decimal és {a}")
+
 
 a = True
 while a:
@@ -48,7 +53,9 @@ while a:
         case 4:
             dividir()
         case 5:
+          a = canvBase()
+        case 6:
           a = False
-          print("Adéu, gràcies! ")
+          print ("Gràcies i Adéu!")  
         case _:
           print("Opció no valida \n")  
