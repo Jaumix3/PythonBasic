@@ -24,9 +24,51 @@ a={"contacte1":{"nom": "Jaume", "cognom": "Cardona", "Telf": "633263320"},
 a=7.0
 b=10.0
 c=a**b
-print(c)"""
+print(c)
 
 a = int(input("Escriu un nombre "))
 b = input("Escriu un altre nombre")
 c = str(a)+b
 print(c)
+
+def menu():
+    print(
+          1. Salutació standard
+          2. Salutació formal
+          3. Salutació de poble
+          4. No se loco
+          5. Sortir
+                 )
+    op = input("Elegeix una opció: ")
+    return op
+
+def salutacio():
+    print("Hola")
+
+def salutacio_premium():
+    print("Bones tardes")
+
+def salutacio_poble():
+    print("UEP! Com va?")
+
+def nose_crazy():
+    print("Calla Ja i deixem en pau, locu ")
+
+#Programa Principal:
+x = menu()
+match(op):
+    case 1:
+        salutacio()
+    case 2:
+        salutacio_premium()
+    case 3:
+        salutacio_poble()
+    case 4:
+        nose_crazy()"""
+
+
+a=10
+while (a>=0):
+    print(a)
+    a-=1
+print("S'ha acabat el bloc i escric això ")
