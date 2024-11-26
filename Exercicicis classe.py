@@ -86,7 +86,7 @@ def ex9():
         if p!=":" and p[0]=="A":
             l.append(p)
     print("Les paraules són: {}".format(l)) 
-    print("Ja hem acabat!")"""
+    print("Ja hem acabat!")
 
 p=""
 l=[]
@@ -98,3 +98,31 @@ while (p!="%"):
         l.append(p)
 print("Les paraules són: {}".format(l)) 
 print("Ja hem acabat!")
+
+f = ""
+l=[]
+while (f!="."):
+    f = input("Introdueixi una frase: ")
+    if f!=".":
+        s = f.lower()
+        f = s.title()
+        l.append(s)
+print("Les paraules són: {}".format(l)) 
+print("Ja hem acabat!")"""
+
+def llegir_llista():
+    l=[]
+    p=""
+    while p!=".":
+        p=input("Introdueixi un element de la llista: ")
+        if p!=".":
+            l.append(int(p))
+    return l
+
+#Programa principal:
+llista=llegir_llista()
+r=[]
+for i,e in enumerate(llista):
+    if llista[i]==e:
+        r.append(e)
+print("La llista d'elements que coincideix element i posició és {}".format(r))
