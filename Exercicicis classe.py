@@ -1,4 +1,4 @@
-"""""
+"""def ex1():
 a={1,2,3,4,5,6}
 b= len(a)
 if 2 in a:
@@ -20,7 +20,7 @@ a={"contacte1":{"nom": "Jaume", "cognom": "Cardona", "Telf": "633263320"},
    "contacte2":{"nom": "Pere", "cognom":"Gomila", "Telf":"645102485"},
    "contacte2":{"nom": "David", "cognom": "Sánchez", "Telf": "676104589"}}
 
-
+def ex3():
 a=7.0
 b=10.0
 c=a**b
@@ -64,11 +64,37 @@ match(op):
     case 3:
         salutacio_poble()
     case 4:
-        nose_crazy()"""
+        nose_crazy()
 
+def ex8():
+    p=""
+    l=[]
+    while (p!="."):
+        p = input("Introdueix una paraula ")
+        if p!="." :
+            l.append(p)
+        if len(l)==4:
+            print("Les paraules són: {}".format(l))
+            p="."
+    print("Ja hem acabat!")
 
-a=10
-while (a>=0):
-    print(a)
-    a-=1
-print("S'ha acabat el bloc i escric això ")
+def ex9():
+    p=""
+    l=[]
+    while (p!=":"):
+        p = input("Introdueix una paraula ")
+        if p!=":" and p[0]=="A":
+            l.append(p)
+    print("Les paraules són: {}".format(l)) 
+    print("Ja hem acabat!")"""
+
+p=""
+l=[]
+while (p!="%"):
+    p = input("Introdueix una paraula ")
+    if p!="%":
+        s= p.lower()
+        s[0]=p[0].upper()+s[1:]
+        l.append(p)
+print("Les paraules són: {}".format(l)) 
+print("Ja hem acabat!")
