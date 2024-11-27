@@ -136,7 +136,7 @@ def sumar_llista(l):
 llista=[2, 3, 4]
 print(llista)
 sumar_llista(llista)
-print(llista)"""
+print(llista
 
 def operació(a, b, c):
     c=a + b
@@ -145,5 +145,16 @@ b=4
 c=0
 print(c)
 operació(a, b, c)
-print(c)
+print(c)"""
 
+def sumal(llista):
+    ls=[]
+    for e in llista:
+        ls.append(e)
+    return ls
+
+#PP
+l=[2,3,4]
+print(l)
+s=sumal(l)
+print("La llsita original és {} i la modificada es {}".format(s,l))
