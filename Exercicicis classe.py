@@ -108,7 +108,7 @@ while (f!="."):
         f = s.title()
         l.append(s)
 print("Les paraules són: {}".format(l)) 
-print("Ja hem acabat!")"""
+print("Ja hem acabat!")
 
 def llegir_llista():
     l=[]
@@ -126,3 +126,24 @@ for i,e in enumerate(llista):
     if llista[i]==e:
         r.append(e)
 print("La llista d'elements que coincideix element i posició és {}".format(r))
+
+def sumar_llista(l):
+    l=[3,4,5]
+    for i in range(len(l)):
+        l[i]*=3
+
+#Programa principal:
+llista=[2, 3, 4]
+print(llista)
+sumar_llista(llista)
+print(llista)"""
+
+def operació(a, b, c):
+    c=a + b
+a=3
+b=4
+c=0
+print(c)
+operació(a, b, c)
+print(c)
+
