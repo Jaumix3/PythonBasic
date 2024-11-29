@@ -145,7 +145,7 @@ b=4
 c=0
 print(c)
 operació(a, b, c)
-print(c)"""
+print(c)
 
 def sumal(llista):
     ls=[]
@@ -157,4 +157,8 @@ def sumal(llista):
 l=[2,3,4]
 print(l)
 s=sumal(l)
-print("La llsita original és {} i la modificada es {}".format(s,l))
+print("La llsita original és {} i la modificada es {}".format(s,l))"""
+
+l=[3,4,5,6,7,10]
+r=list(map(lambda x: x*2, l))
+print(r)
