@@ -4,7 +4,8 @@ def gran():
 
     if a<b:
         print("{} és el nombre gran ".format(b))
-    else:
+    elif a>b:
         print("{} és el nombre gran".format(a))
-
+    else:
+        print("{} és igual que {}".format(a,b))
 gran()
