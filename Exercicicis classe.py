@@ -152,13 +152,61 @@ def sumal(llista):
     for e in llista:
         ls.append(e)
     return ls
-
 #PP
 l=[2,3,4]
 print(l)
 s=sumal(l)
-print("La llsita original és {} i la modificada es {}".format(s,l))"""
+print("La llsita original és {} i la modificada es {}".format(s,l))
 
 l=[3,4,5,6,7,10]
-r=list(map(lambda x: x*2, l))
+
+r=[]
+for e in l:
+    r.append(e**5)
 print(r)
+
+r=list(map(lambda x: x**5, l))
+print(r)
+
+
+def pertres(x):
+    return x**5
+r=list(map(pertres,l))
+print(r)
+
+#Bucle
+l=[3,5,6,8,9,11,12]
+
+r=[]
+for e in l:
+    if e%2==0:
+        r.append(e)
+print(r)
+
+#Versió amb filter
+
+def parell(x):
+    if x%2==0:
+        return True
+    return False
+r=list(filter(parell, l))
+print(r)
+
+
+r=list(map(lambda x: x%2==0, l))
+print(r)"""
+
+n = int(input("Introdueixi el número a fer el factorial: "))
+r=1
+while(i<=n):
+    r=r*n
+    n=n-1
+print(r)
+
+
+def fact(n):
+    if n<=0:
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(3))
