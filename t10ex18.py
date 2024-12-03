@@ -1,7 +1,28 @@
-def sumarllistes():
-    l1=[1,2,3,4,5,6,7,8,6,5,4,3,]
-    l2=[45,6,7,7,88,9,9,0,4,4,4,]
-    
-def multiplicarllistes():
-    l1 = [1,2,3,4,5,6,7,8,9,10]   
-    l2 = [44,55,6,77,3,3453,5,66]
+def llegir_llista():
+    l=[]
+    a="a"
+    while a!=".":
+        a=input("Introdueix un número: ")
+        if a!=".":
+            l.append(int(a))
+    return l
+
+def sumar_llista(l):
+    suma=0
+    for e in l:
+        suma += e
+    return suma
+
+def multiplicar_llista(l):
+    multiplicacio=1
+    if 0 in l or len(l)==0:
+        return 0
+    else:
+        for e in l:
+            multiplicacio *= e
+    return multiplicacio
+
+#Programa principal
+l=llegir_llista()
+print("La suma dels elements de la llista {} és {}".format(l,sumar_llista(l)))
+print("La multiplicació dels elements de la llista {} és {}".format(l,multiplicar_llista(l)))

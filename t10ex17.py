@@ -1,9 +1,10 @@
-def tf():
-    a = input("Diguis una lletra: ")
-
-    if a in ("a","e","i","o","u"):
-        print("{} és una vocal ".format(a))
+def esvocal(x):
+    return x.lower() in "aeiou"
+#programa principal
+a = "a"
+while(a!="."):
+    a = input("Escriu la vocal")
+    if esvocal(a):
+        print("La lletra introduïda {} és vocal".format(a))
     else:
-        print("{} és una consonant ".format(a))
-
-tf()
+        print("La lletra introduïda {} no és una vocal".format(a))
