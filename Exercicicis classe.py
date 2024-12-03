@@ -209,7 +209,7 @@ def fact(n):
         return 1
     else:
         return n*fact(n-1)
-print(fact(3))"""
+print(fact(3))
 
 def llegir_llista():
     l=[]
@@ -224,4 +224,22 @@ def conversió_punts():
     a = llegir_llista
     for e in a:
         if a in("aeiou"):
-            
+            e == "."
+    return e
+
+l = llegir_llista
+y = conversió_punts
+print("{} {}".format(l, y)) """
+
+s = input("Introdueix la cadena de caràcters: ")
+l =list(s)
+r=[]
+for e in l:
+    if e in "aeiouAEIOU":
+        r.append(".")
+    elif e in "QWRTYPÑLKJHGFDSZXCVBNMqwrtypñlkjhgfdszxcvbnm":
+        r.append("-")
+    else:
+        r.append(e)
+s = ".".join(r)
+print(s)
