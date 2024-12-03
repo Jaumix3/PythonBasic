@@ -194,7 +194,7 @@ print(r)
 
 
 r=list(map(lambda x: x%2==0, l))
-print(r)"""
+print(r)
 
 n = int(input("Introdueixi el número a fer el factorial: "))
 r=1
@@ -209,4 +209,19 @@ def fact(n):
         return 1
     else:
         return n*fact(n-1)
-print(fact(3))
+print(fact(3))"""
+
+def llegir_llista():
+    l=[]
+    a="a"
+    while a!=".":
+        a=input("Introdueix un caracter: ")
+        if a!=".":
+            l.append(int(a))
+    return l
+
+def conversió_punts():
+    a = llegir_llista
+    for e in a:
+        if a in("aeiou"):
+            

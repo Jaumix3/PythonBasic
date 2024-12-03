@@ -6,11 +6,10 @@ def llegir_llista():
         if a!=".":
             l.append(int(a))
     return l
-def crear_punts(l):
-    s="."
-    for e in l:
-        print("{} \n".format(s*e))
-        s="."
-#Programa principal
+def gran_llista(l):
+    return max(l)
+
+#Programa Principal
+
 a = llegir_llista()
-crear_punts(a)
+print("El Major de la llista {} és {}".fortmat(a, gran_llista(a)))

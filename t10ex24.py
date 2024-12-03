@@ -13,4 +13,7 @@ def crear_punts(l):
         s="."
 #Programa principal
 a = llegir_llista()
+b=llegir_llista()
+crear_punts(a)
+crear_punts(b)
 crear_punts(a)
