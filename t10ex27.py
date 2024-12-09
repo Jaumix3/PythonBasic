@@ -7,5 +7,10 @@ def llegir_llista():
             l.append(a)
     return l
 
-def filtrar_paraules(l):
-    a=l[]
+def filtrar_paraules(l,n):
+    return list(filter(lambda x:len(x)>n,l))
+
+#Programa principal
+x = llegir_llista()
+y = int(input("Introdueixi un número: "))
+print("De la llista {} que tinguin més de {} caràcters hi ha {}".format(x,y,filtrar_paraules(x,y)))
