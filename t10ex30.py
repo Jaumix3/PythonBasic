@@ -8,4 +8,5 @@ for i in range(4):
     d.clear()
 
 print("\t Nom \t Data de neixament \t Ants que farà  aquest any")
-for i in range (4):
+for e in l:
+    print("\t {} \t {} \t {} ". format(e[0],e[1],))
