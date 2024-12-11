@@ -12,7 +12,7 @@ def noms_comencen_per(l, c):
     for e in l:
         if e[0].lower() == c.lower():  
     
-    print("Els noms que comencen per {} són: {}".format(c,m))
+            print("Els noms que comencen per {} són: {}".format(c,m))
 
 # Programa principal
 l = llegir_llista()
