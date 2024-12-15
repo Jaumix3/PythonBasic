@@ -9,3 +9,4 @@ def crear_llista_fitxer(nom):
 #Programa principal
 l=crear_llista_fitxer("prova1.txt")
 print(l)
+
