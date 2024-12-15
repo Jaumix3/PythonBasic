@@ -1,4 +1,3 @@
-num = input("Intro un num: ")
-print("El número de dígits és {}".format(len(num)))
-
-
+l=[5, 4, 3, 2, 1]
+for i in range(5):
+   print(l[i:])
