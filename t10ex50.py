@@ -16,4 +16,4 @@ def elimina_duplicats(l):
 #programa principal
 l=llegir_llista()
 r=elimina_duplicats(l)
-print("La llista {} queda així {}".format(l,r))
+print("La llista {} queda així {}".format(l,r)
